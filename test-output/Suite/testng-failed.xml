@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="generics.TestListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="scripts.InvalidLogin">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- scripts.InvalidLogin -->
+      <class name="scripts.VerifyBuildNumber">
+        <methods>
+          <include name="preCondition"/>
+          <include name="testVerifyBuildNumber"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- scripts.VerifyBuildNumber -->
+      <class name="scripts.ValidLogin">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- scripts.ValidLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
